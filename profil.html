@@ -37,7 +37,7 @@
             .verticalmenu {
                 width: 28%;
                 margin: auto;
-                background-color: seagreen;
+                background-color: rgb(0, 128, 85);
                 padding-top: 10px;
                 float: left;
                 margin-left: 0;
@@ -56,49 +56,30 @@
             .verticalmenu a {
                 text-decoration: none;
                 display: block;
-                color: rebeccapurple;
             }
             .verticalmenu li:hover {
                 background-color: wheat;
             }
             .kandungan {
-            margin: auto;
-            border: black solid;
-            width: 65%;
-            text-align: center;
-            float: right;
-            padding-top: 10px;
-            height: 65%;
+                width: 65%;
+                margin: auto;
+                border: black solid;
+                padding-top: 10px;
+                float: right;
+                margin-right: 0;
+                height: 65%;
             }
-            img {
-            width: 100px;
-            margin: 10px;
-            padding: 5px;
-            border: black solid;
+            .vertical:after {
+                content: "";
+                display: table;
+                clear: both;
             }
-            table {
-            font-size: 3mm;
-            margin-right: 0px;
-            border: black solid;
-            width: 80%;
-            }
-            td {
-            font-size; 3mm;
-            border: black solid;
-            text-align: left;
-            width: 70%;
-            padding: 2px;
-            }
-            .profile .title {
-            text-align: right;
-            width: 30%;
-            }
-            .kaki {
+        .kaki {
             text-align: center;
             background-color: yellowgreen;
             border: green solid;
             padding: 10px;
-            }
+        }
         </style>
     </head>
     <body>
@@ -116,44 +97,28 @@
                 <li><a href="laporan.html">Laporan</a></li>
             </ul>
         </div>
-          
         <!--CONTENT-->
         <div class="vertical">
             <div class="verticalmenu">
                 Setting
                 <ul>
-                    <li><a href="profil.html">Profil Saya</a></li>
                     <li><a href="tukar.html">Tukar Kata Laluan</a></li>
-                </ul>
+                 </ul>
             </div>
-          
         <div class="kandungan">
-          <h3>Profil Saya</h3>
-          <div class="profile">
-             <img src="images/mak esah.jpg">
-            <table>
-              <tbody>
-                <tr>
-                  <td class="title">NO PELANGGAN :</td>
-                  <td>G416892</td>
-                </tr>
-                <tr>
-                  <td class="title">NAMA :</td>
-                  <td>Mak Esah</td>
-                </tr>
-                <tr>
-                  <td class="title">ALAMAT :</td>
-                  <td>No 96, Jln Keluarga 69, Pasir Gudang, Johor</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          </div>
-          
+            <h3>Login</h3>
+            <form action="">
+                Username <input type="text" width="100px">
+                <br>Passwords <input type="text">
+                <br><input type="button" value="Login">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
         <!--FOOTER-->
-            <div class="kaki">
-              <font>Copyright &copy; Syarikat Laundry, 2021</font>
-            </div>
-            </center>
-            </body>
-        </html>
+    <div class="kaki">
+        <font>Copyright &copy; Syarikat Laundry, 2021</font>
+    </div>
+        </center>
+    </body>
+</html>
